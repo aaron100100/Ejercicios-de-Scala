@@ -5,11 +5,14 @@ object Ejercicio72 extends App {
   val cadena_test4 = "Ola"
   val cadena_test5 = "tigres"
 
-  println(Es_palindromo(cadena_test1))
-  println(Es_palindromo(cadena_test2))
-  println(Es_palindromo(cadena_test3))
-  println(Es_palindromo(cadena_test4))
-  println(Es_palindromo(cadena_test5))
+  if( Es_palindromo(cadena_test1)){
+    println("La palabra " + cadena_test1 +" es palindromo ")
+  }
+  else{
+    println("La palabra " + cadena_test1 +" no es palindromo ")
+  }
+
+
 
 
 
