@@ -29,10 +29,10 @@ object Ejercicio92 extends App {
 
   def NextPrime(num:Int): Int = {
     var i = num
-    var encontrado = true
-    while (encontrado){
+    var encontrado = false
+    while (!encontrado){
       if (Es_Primo(i + 1)){
-        encontrado = false
+        encontrado = true
       }
       i = i + 1
     }
