@@ -1,4 +1,4 @@
-object Ejericicio10 extends   App {
+object Ejercicio10 extends   App {
   println("Ingresa un entero: ")
   val a = scala.io.StdIn.readInt()
   println("Ingresa otro entero: ")
