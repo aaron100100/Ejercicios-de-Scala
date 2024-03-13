@@ -12,13 +12,34 @@ object Ejercicio72 extends App {
     println("La palabra " + cadena_test1 +" no es palindromo ")
   }
 
+  if( Es_palindromo(cadena_test2)){
+    println("La palabra " + cadena_test2 +" es palindromo ")
+  }
+  else{
+    println("La palabra " + cadena_test2 +" no es palindromo ")
+  }
 
+  if( Es_palindromo(cadena_test3)){
+    println("La palabra " + cadena_test3 +" es palindromo ")
+  }
+  else{
+    println("La palabra " + cadena_test3 +" no es palindromo ")
+  }
 
+  if( Es_palindromo(cadena_test4)){
+    println("La palabra " + cadena_test4 +" es palindromo ")
+  }
+  else{
+    println("La palabra " + cadena_test4 +" no es palindromo ")
+  }
 
-
-
+  if( Es_palindromo(cadena_test5)){
+    println("La palabra " + cadena_test5 +" es palindromo ")
+  }
+  else{
+    println("La palabra " + cadena_test5 +" no es palindromo ")
+  }
   //Creamos una función
-
   def Es_palindromo(cadena :  String): Boolean = {
     var bandera = true
     var i = 0 // variable iteradora
@@ -30,7 +51,6 @@ object Ejercicio72 extends App {
         }
         i = i + 1
       }
-
     }
     //Caso para cadenas de longitud impar
     else{

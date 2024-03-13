@@ -8,30 +8,18 @@ object Ejercicio75 {
     println("Ingresa el segundo entero positivo: ")
     val m = scala.io.StdIn.readInt()
 
-    var d = smaller(n,m)
+    var d = scala.math.min(n,m)
     //println(d)
 
-    while (d % m == 0 && d % n == 0 ){
+    while (m % d != 0 || n % d != 0 ){
       d = d - 1
+      //println(d)
     }
-    println(d)
+    //println(d)
     println("El máximo común divisor de " + m  + " y " + n + " es:" + d)
 
 
   }
 
-  def smaller(num1: Int, num2:Int): Int = {
-    var retorno = 0
-    if (num1 < num2){
-      retorno = num1
-    }
-    else if( num2 < num1){
-      retorno = num2
-    }
-    else{
-      retorno = num1
-    }
-    retorno
-  }
 
 }

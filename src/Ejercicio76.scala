@@ -9,7 +9,6 @@ object Ejercicio76 {
       println("Los factores primos de " + num + " son:")
       factorizacion_primos(num)
     }
-
   }
 
   def factorizacion_primos(num:Int): Unit = {
