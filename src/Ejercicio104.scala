@@ -1,14 +1,14 @@
 object Ejercicio104 extends App {
 
   val listaDeEnteros = leerEnteros()
-  listaDeEnteros.foreach(element => println(element))
+  //listaDeEnteros.foreach(element => println(element))
   println("---------")
   val listaOrdenada = listaDeEnteros.sorted
   listaOrdenada.foreach(element => println(element))
 
 
   def leerEnteros(): List[Int] = {
-    println("Introduce enteros (introduce un valor no entero para terminar):")
+    println("Introduce enteros (introduce el 0 para detener las operaciones):")
 
     // Lista mutable para almacenar los enteros
     var enteros: List[Int] = List.empty[Int]

@@ -2,8 +2,8 @@ object Ejercicio117 extends App {
   println("¿Cuántos puntos desea ingresar?")
   val k = scala.io.StdIn.readInt()
   val valores = contruir_recta(k)
-  println(valores._1)
-  println(valores._2)
+  //println(valores._1)
+  //println(valores._2)
   println("La ecuación de la recta con los puntos proporcionados es: \n" +
     "y = " + valores._1 + "x + " + valores._2)
 
@@ -12,7 +12,7 @@ object Ejercicio117 extends App {
     var suma_y = 0.0
     var suma_x_cuadrada = 0.0
     var suma_x_y = 0.0
-    var i = 0
+
     for(i <- 1 to n){
       println("Ingresa la coordena x del punto " + i  + ": ")
       var x = scala.io.StdIn.readDouble()

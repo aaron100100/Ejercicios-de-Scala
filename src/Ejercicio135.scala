@@ -17,7 +17,8 @@ object Ejercicio135{
   def areAnagrams(str1: String, str2: String): Boolean = {
     if (str1.length != str2.length) {
       false
-    } else {
+    }
+    else{
       val sortedStr1 = str1.sorted
       val sortedStr2 = str2.sorted
       sortedStr1 == sortedStr2

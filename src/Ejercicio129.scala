@@ -52,14 +52,26 @@ object Ejercicio129 extends App {
   val listaContadores = List(contador_2,contador_3, contador_4, contador_5, contador_6,
     contador_7, contador_8, contador_9, contador_10, contador_11, contador_12)
 
-  print("Total\tSimulated Percent\n")
+  //Diccionario de probabilidades conocidas
+  var expected = Map[Int,BigDecimal]()
+  expected += (0 -> BigDecimal(1)/BigDecimal(36))
+  expected += (1 -> BigDecimal(2)/BigDecimal(36))
+  expected += (2 -> BigDecimal(3)/BigDecimal(36))
+  expected += (3 -> BigDecimal(4)/BigDecimal(36))
+  expected += (4 -> BigDecimal(5)/BigDecimal(36))
+  expected += (5 -> BigDecimal(6)/BigDecimal(36))
+  expected += (6 -> BigDecimal(5)/BigDecimal(36))
+  expected += (7 -> BigDecimal(4)/BigDecimal(36))
+  expected += (8 -> BigDecimal(3)/BigDecimal(36))
+  expected += (9 -> BigDecimal(2)/BigDecimal(36))
+  expected += (10 -> BigDecimal(1)/BigDecimal(36))
+
+
+  print("Total\tSimulated Percent\tExpected Percent\n")
   for(i <- 0 to 10){
-    println((i + 2)+ "\t\t\t" + (BigDecimal(listaContadores(i))/BigDecimal(1000))*BigDecimal(100))
+    println((i + 2)+ "\t\t\t" + (BigDecimal(listaContadores(i))/BigDecimal(1000))*BigDecimal(100) + "\t\t\t"
+      + expected(i)*100)
   }
-
-
-
-
   def lanzarDados(): Int = {
     val random = new Random()
     val num1 = random.nextInt(6) + 1
