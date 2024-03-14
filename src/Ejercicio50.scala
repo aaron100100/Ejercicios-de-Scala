@@ -18,12 +18,12 @@ object Ejercicio50 extends App {
   }
   else{
     if( discriminante == 0){
-      var raiz = -b/(2*a)
+      val raiz = -b/(2*a)
       println("La función cuadrática tiene solo una raíz y es: " + raiz)
     }
     else if( discriminante > 0){
-      var raiz_1 = -(b + sqrt(b*b - 4*a*c))/(2*a)
-      var raiz_2 = -(b - sqrt(b*b - 4*a*c))/(2*a)
+      val raiz_1 = -(b + sqrt(b*b - 4*a*c))/(2*a)
+      val raiz_2 = -(b - sqrt(b*b - 4*a*c))/(2*a)
       println("La función cuadrática tiene dos raices que son : " + raiz_1 + " y " + raiz_2)
     }
     else{
