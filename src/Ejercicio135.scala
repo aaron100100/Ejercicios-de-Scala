@@ -1,19 +1,18 @@
 object Ejercicio135{
 
   def main(args: Array[String]): Unit = {
-    println("Enter the first string:")
+    println("Ingresa la primer cadena:")
     val str1 = scala.io.StdIn.readLine().toLowerCase()
 
-    println("Enter the second string:")
+    println("Ingresa la segunda cadena:")
     val str2 = scala.io.StdIn.readLine().toLowerCase()
 
     if (areAnagrams(str1, str2)) {
-      println("The strings are anagrams.")
+      println("Las cadenas son anagramas.")
     } else {
-      println("The strings are not anagrams.")
+      println("Las cadenas no son anagramas.")
     }
   }
-
   def areAnagrams(str1: String, str2: String): Boolean = {
     if (str1.length != str2.length) {
       false
