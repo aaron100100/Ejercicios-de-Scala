@@ -5,8 +5,9 @@ object Ejercicio117 extends App {
   //println(valores._1)
   //println(valores._2)
   println("La ecuación de la recta con los puntos proporcionados es: \n" +
-    "y = " + valores._1 + "x + " + valores._2)
-
+    "y = " + BigDecimal(valores._1).setScale(2, BigDecimal.RoundingMode.HALF_UP) + "x + "
+    + BigDecimal(valores._2).setScale(2, BigDecimal.RoundingMode.HALF_UP) )
+  //La modificación de arriba se hizo para tener dos decimales de precisión y ya el resultado se vea como el ejemplo del libro
   def contruir_recta(n:Int): (Double,Double) = {
     var suma_x = 0.0
     var suma_y = 0.0
